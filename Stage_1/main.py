@@ -14,7 +14,7 @@ def get_info():
     current_day = datetime.datetime.utcnow().strftime("%A")
     
     # Get the current UTC time as a formatted string
-    current_utc_time = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+    utc_time = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 
     github_file_url = 'https://github.com/walescript/HNG-stage1/blob/main/Stage_1/main.py'
     github_repo_url = 'https://github.com/walescript/HNG-stage1/tree/main'
@@ -24,7 +24,7 @@ def get_info():
     response = {
         'slack_name': slack_name,
         'current_day': current_day,
-        'current_utc_time': current_utc_time,
+        'utc_time': utc_time,
         'track': track,
         'github_file_url': github_file_url,
         'github_repo_url': github_repo_url,
