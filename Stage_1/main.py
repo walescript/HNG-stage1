@@ -4,7 +4,7 @@ import datetime
 app = Flask(__name__)
 
 # Endpoint for retrieving information
-@app.route('/info', methods=['GET'])
+@app.route('/api', methods=['GET'])
 def get_info():
     # Retrieve query parameters
     slack_name = request.args.get('slack_name')
